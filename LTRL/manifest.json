@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "LTRL",
+    "description": "It's literally an extensions that adds \"literally\" to the first paragraph of every wikipedia article",
+    "version": "1.0.0",
+
+    "content_scripts": [
+        {
+            "matches": ["https://en.wikipedia.org/*"],
+            "js": ["scripts/literally.js"]
+        },
+        {
+            "matches": ["https://pt.wikipedia.org/*"],
+            "js": ["scripts/literalmente.js"]
+        }
+    ]
+}
